@@ -1,0 +1,744 @@
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "sans-serif", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "Gill Sans"
+}
+
+body {
+    display: flex;
+	 flex-direction: column;
+    background: #d3d3d3;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+}
+
+
+ .contactWrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+/*header*/
+/*Nav menu*/
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  margin-bottom: 50px;
+}
+
+.logo{
+	font-family:'Permanent Marker', cursive;
+  font-size: 1.5rem;
+  margin: .5rem;
+  color: white;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+.navbarLinks ul{
+  margin: 0;
+  padding: 0;
+  display: flex;
+
+}
+
+.navbarLinks li{
+  list-style: none;
+  margin-right: 10px;
+}
+
+.navbarLinks li a{
+  text-decoration: none;
+  padding: 1.5rem;
+  display: block;
+  color: white;
+	font-weight: 600;
+
+}
+
+.navbarLinks li a:hover{
+  background-color: #555;
+
+}
+
+
+.toggleButton{
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggleButton .bar{
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+}
+
+
+
+/*contact us*/
+.contactWrapper{
+	background: gray;
+	max-width: 600px;
+	width: 100%;
+	margin: 10px auto;
+	padding: 30px;
+	margin-bottom: 50px;
+}
+
+
+
+.contactWrapper .form{
+	width: 100%;
+
+}
+
+
+.contactWrapper .form .inputField{
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+
+}
+
+.contactWrapper .form .inputField label{
+	width: 300px;
+	margin-right: 60px;
+	font-size: 20px;
+}
+
+
+
+.contactWrapper .form .inputField .input,
+.contactWrapper .form .inputField .textarea{
+	width: 100%;
+	padding: 8px 10px;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	border-radius: 3px;
+	font-size: 18px;
+	transition: all 0.3s ease;
+
+}
+
+.contactWrapper .form .inputField .textarea{
+	resize: none;
+	height: 125px;
+}
+
+
+.contactWrapper .form .inputField .customSelect{
+	position: relative;
+	width: 100%;
+	height: 37px;
+}
+
+.contactWrapper .form .inputField .customSelect select{
+	-webkit-appearnce: none;
+	appearance: none;
+	width: 100%;
+	height: 100%;
+	padding: 8px 10px;
+	border-radius: 3px;
+	outline: none;
+	font-size: 18px;
+}
+
+.contactWrapper .form .inputField .customSelect:before{
+	content: " ";
+	position: absolute;
+	top: 12px;
+	right: 10px;
+	border: 8px solid;
+	border-color: #d5dbd9 transparent transparent;
+	pointer-events: none;
+}
+
+.contactWrapper .form .inputField .input:focus,
+.contactWrapper .form .inputField .textarea:focus,
+.contactWrapper .form .inputField  select:focus{
+	border: 1px solid black;
+}
+
+
+
+.contactWrapper .form .inputField .btn{
+	width: 100%;
+	padding: 8px 10px;
+	font-size: 20px;
+	background: black;
+	color: white;
+	cursor: pointer;
+	border-radius: 3px;
+	outline: none;
+}
+
+
+.contactWrapper .form .inputField:last-child{
+	margin-bottom: 0;
+}
+
+
+.contactWrapper .form .inputField .btn:hover{
+	background: #5352ed;
+}
+
+
+.contactPageDescription p{
+	text-align: center;
+	width: 700px;
+	font-size: 22px;
+	font-weight: 700;
+	margin-top: 20px;
+	color: black;
+}
+
+.contactPageDescription{
+	margin: 30px auto;
+
+}
+
+.contactPageDescription h1,
+.contactPageDescription h4{
+	text-align: center;
+	padding-top: 10px;
+	color: black;
+}
+
+
+
+.contactPageDescription h1{
+	font-size: 2.5em;
+	margin-top: 20px;
+}
+
+
+
+
+
+/*about page */
+.aboutContainer{
+	 margin: 100px;
+}
+.sectionOne {
+   margin-right: 200px;
+}
+
+.sectionOne p{
+  width: 500px;
+	float: right;
+	font-size: 21px;
+	text-align: justify-all;
+	line-height: 1.3em;
+	margin-top: 20px;
+}
+
+.sectionTwo{
+  margin-left: 50px;
+}
+
+.sectionTwo img{
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.aboutHeading h1,
+.galleryHeading h1,
+.testemonials h1{
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 60px;
+	font-weight: 600;
+	position: relative;
+}
+
+.aboutHeading h1::after,
+.galleryHeading h1::after,
+.testemonials h1::after{
+	content: '';
+	background: #303ef7;
+	width: 100px;
+	height: 5px;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+/*Gallery page*/
+.photo-grid-container {
+  margin-top: 50px;
+  column-count: 3;
+  column-width: 300px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.photo-grid-item img{
+  width: 100%;
+  padding: 8px;
+}
+
+
+
+
+
+/*Index page*/
+.serviceContainer{
+	padding: 0 8%;
+	margin-bottom: 100px;
+}
+
+.serviceContainer .heading1{
+	text-align: center;
+	font-size: 2em;
+	margin-bottom: 60px;
+	font-weight: 600;
+	position: relative;
+}
+
+.serviceContainer .heading1::after{
+	content: '';
+	background: #303ef7;
+	width: 100px;
+	height: 5px;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.row{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+
+}
+
+.service{
+	text-align: center;
+	padding: 25px 10px;
+	border-radius: 5px;
+	font-size: 14px;
+	cursor: pointer;
+	background: transparent;
+  transition: transform 0.5s, background 0.5s;
+}
+
+.service i{
+	font-size: 40px;
+	margin-bottom: 10px;
+	color: #303ef7;
+}
+
+.service h2{
+	font-weight: 600;
+	margin-bottom: 8px;
+}
+
+
+.service:hover{
+	background: #303ef7;
+	color: white;
+	transform: scale(1.05);
+}
+
+.service:hover i{
+	color: white;
+}
+
+
+/*testimonials */
+.testemonials {
+  padding: 10px 10px;
+  //background: #f1f1f1;
+  color: black;
+  text-align: center;
+
+}
+.testimonialRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 15px;
+}
+.testemonial {
+  background: #fff;
+  padding: 30px;
+}
+.testemonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.name {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.stars {
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+
+
+.mainImage{
+	position: relative;
+	background: rgba(0,0,0,0.7) url("../images/banner.jpg") no-repeat center;
+	background-blend-mode: darken;
+	background-size: cover;
+	height: 500px;
+	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+.mainImageContainer{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.mainImageContainer h1{
+	margin: o;
+	font-size: 66px;
+	color: white;
+
+}
+
+.cen{
+	margin: 20px;
+	display: block;
+	font-size: 26px;
+	color: white;
+}
+
+.to-about{
+	color: white;
+	padding: 10px 24px;
+	background: #333;
+	transition: .6s;
+	text-decoration: none;
+}
+
+.to-about:hover{
+	opacity: .6;
+
+}
+
+
+
+/* Footer */
+footer{
+  background: black;
+  height: auto;
+  width: 100vw;
+  padding-top: 30px;
+  margin-top: auto;
+
+}
+.footerContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+
+
+.footerContent p{
+  color: white;
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+
+}
+
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.socials li{
+   margin: 0 10px;
+}
+
+.socials a{
+  text-decoration: none;
+
+}
+
+.socials a i{
+  font-size: 1.6rem;
+  color: white;
+}
+
+.socials .fab:hover{
+  color: #555;
+}
+
+
+
+
+
+.footerBottom{
+  background: black;
+  color: white;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footerBottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footerBottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 100;
+}
+
+.footerLinks{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footerLinks ul li{
+ display: inline-block;
+}
+
+.footerLinks ul li a{
+   text-decoration: none;
+   margin: 0 5px 0 5px;
+   color: white;
+   font-weight: 500;
+   font-size: 1.5em;
+}
+
+
+.footerLinks ul li a:hover{
+  color: #555;
+}
+
+
+/* Back to top button */
+.go-top-btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  background: grey;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+}
+
+
+/*index testemonial*/
+@media screen and (max-width:960px) {
+  .col {
+    flex: 100%;
+    max-width: 80%;
+  }
+}
+@media screen and (max-width:600px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+/*Navbar */
+@media (max-width: 800px){
+  .toggleButton{
+    display: flex;
+  }
+
+  .navbarLinks{
+    display: none;
+    width: 100%;
+
+  }
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbarLinks ul{
+    width: 100%;
+    flex-direction: column;
+
+  }
+
+  .navbarLinks li{
+    text-align: center;
+
+  }
+
+  .navbarLinks li a{
+    padding: .5rem 1rem;
+  }
+
+  .navbarLinks.active{
+    display: flex;
+  }
+}
+
+
+
+
+
+
+
+/*contact page*/
+@media screen and (max-width: 768px){
+		.contactWrapper .form .inputField{
+		flex-direction: column;
+		align-items: flex-start;
+    }
+
+	.contactWrapper .form .inputField label{
+		margin-bottom: 5px;
+	}
+
+
+
+  .contactPageDescription p{
+    width: 300px;
+
+  }
+  .contactPageDescription h1{
+    margin-right: 10px;
+  }
+
+  .contactPageDescription p{
+    margin-left: 30px;
+    text-align: justify-all;
+  }
+
+
+  .photo-grid-container .photo-grid-item {
+    margin-right: 60px;
+
+  }
+  .photo-grid-container .photo-grid-item img{
+    width: 350px;
+  }
+
+  .aboutContainer{
+    margin: 20px;
+  }
+.sectionOne {
+  margin-right: 100px;
+}
+  .aboutContainer .sectionOne p{
+    display: block;
+    float: none;
+    font-size: 16px;
+    width: 500px;
+  }
+
+.sectionTwo img{
+	margin-right: 600px;
+}
+
+  .aboutContainer .sectionTwo img{
+     width: 400px;
+
+  }
+
+}
+
+
+@media screen and (max-width: 420px){
+
+	.contactWrapper .form .inputField{
+		flex-direction: column;
+		align-items: flex-start;
+    }
+
+	.contactWrapper .form .inputField label{
+		margin-bottom: 5px;
+	}
+
+  .contactPageDescription p{
+    width: 200px;
+
+  }
+  .contactPageDescription h1{
+    margin-right: 10px;
+  }
+
+  .contactPageDescription p{
+    margin-left: 30px;
+    text-align: justify-all;
+  }
+
+
+  .photo-grid-container .photo-grid-item {
+    margin-left: 70px;
+  }
+  .photo-grid-container .photo-grid-item img{
+    width: 300px;
+
+  }
+
+  .aboutContainer{
+    margin: 0;
+  }
+
+}
